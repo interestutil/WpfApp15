@@ -20,7 +20,7 @@ namespace WpfApp15.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=COM183-LAB3\\SQLEXPRESS;Initial Catalog=School;Integrated Security=True;Trust Server Certificate=True");
+            optionsBuilder.UseSqlServer("INSERT_CONN_STRING");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
