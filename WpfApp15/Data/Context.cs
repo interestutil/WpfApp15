@@ -16,11 +16,11 @@ namespace WpfApp15.Data
 
         public DbSet<Students> Students { get; set; }
         public DbSet<Courses> Courses { get; set; }
-        public DbSet<Course_degrees> Courses_degrees { get; set; }
+        public DbSet<Course_degrees> Course_degrees { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("INSERT_CONN_STRING");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-J624QNQ\\SQLEXPRESS;Initial Catalog=StudentsDB;Integrated Security=True;Trust Server Certificate=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
